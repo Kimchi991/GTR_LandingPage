@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #050505;
+  --foreground: #ffffff;
+}
+
+html, body {
+  background: #050505;
+  color: white;
+  margin: 0;
+  padding: 0;
+  overflow: visible;
+  position: relative; /* Fixed: Provide non-static context for scroll calculations */
+}
+
+/* Custom Emerald Scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #50C878;
+  border-radius: 10px;
+}
+
+.snap-start {
+  scroll-snap-align: start;
+}
+
+@layer base {
+  h1, h2, h3, h4, h5, h6 {
+    @apply tracking-tighter font-bold;
+  }
+}
+
+@layer components {
+  .glass-nav {
+    @apply backdrop-blur-md bg-opacity-75 bg-[#050505] border-b border-white/5;
+  }
+}
+
+.text-gradient-emerald {
+  background: linear-gradient(to bottom, #ffffff, #50C878);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+/* Custom scrollbar for premium look */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #050505;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1a1a1a;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #50C878;
+}
