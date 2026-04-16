@@ -86,7 +86,7 @@ const HeartPillar = () => {
           }}
         >
           <Image 
-            src="/Pillars/1stP.png" 
+            src="/pillars/1stP.png" 
             alt="The Heart - Engine" 
             fill 
             className="object-contain"
@@ -154,7 +154,7 @@ const BrainPillar = () => {
     <section ref={containerRef} id="brain" className="h-screen w-full relative flex items-center justify-center bg-[#050505] snap-start overflow-hidden">
       <div className="relative w-full h-full max-w-6xl max-h-[80vh]">
         <Image 
-          src="/Pillars/2ndP.png" 
+          src="/pillars/2ndP.png" 
           alt="The Brain - Drivetrain" 
           fill 
           className="object-contain"
@@ -234,7 +234,7 @@ const SoulPillar = () => {
     >
       <div className="relative w-full h-full flex items-center justify-center">
         <Image 
-          src="/Pillars/3rdP.png" 
+          src="/pillars/3rdP.png" 
           alt="The Soul - Z-Tune" 
           fill 
           className="object-contain"
