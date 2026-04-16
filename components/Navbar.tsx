@@ -2,6 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { LogoGTR } from "./Logo";
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -19,13 +20,13 @@ const Navbar = () => {
       initial={{ y: -100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.8, ease: "circOut" }}
-      className={`fixed top-0 left-0 right-0 z-[100] transition-all duration-500 py-4 px-6 md:px-12 flex items-center justify-between ${
-        scrolled ? "glass-nav py-3" : "bg-transparent"
+      className={`fixed top-0 left-0 right-0 z-[100] transition-all duration-500 py-6 px-6 md:px-12 flex items-center justify-between ${
+        scrolled ? "glass-nav py-4" : "bg-transparent"
       }`}
     >
       {/* Left: Logo */}
-      <div className="text-white font-semibold text-xl tracking-tight">
-        GT-R <span className="text-emerald-glow">R34</span>
+      <div className="flex items-center gap-4">
+        <LogoGTR className="h-10 md:h-12" />
       </div>
 
       {/* Center: Links */}

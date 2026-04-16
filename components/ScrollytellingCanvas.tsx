@@ -2,6 +2,7 @@
 
 import React, { useRef, useEffect, useState } from "react";
 import { useScroll, useTransform, useMotionValueEvent, motion } from "framer-motion";
+import { LogoGTR } from "./Logo";
 
 interface ScrollytellingCanvasProps {
   frameCount: number;
@@ -178,6 +179,14 @@ const ScrollytellingCanvas: React.FC<ScrollytellingCanvasProps> = ({ frameCount,
         {!imagesLoaded && (
           <div className="absolute inset-0 z-50 flex items-center justify-center bg-[#050505]">
             <div className="flex flex-col items-center">
+              <motion.div
+                 initial={{ opacity: 0, scale: 0.9, y: 10 }}
+                 animate={{ opacity: 1, scale: 1, y: 0 }}
+                 transition={{ duration: 1.5, ease: "easeOut" }}
+                 className="mb-20"
+              >
+                <LogoGTR className="h-24 md:h-32" />
+              </motion.div>
               <div className="w-16 h-16 border-4 border-emerald-glow border-t-transparent rounded-full animate-spin mb-4" />
               <span className="text-emerald-glow font-mono tracking-widest animate-pulse">
                 RESTORING LEGEND...
