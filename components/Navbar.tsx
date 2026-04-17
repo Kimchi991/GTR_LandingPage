@@ -35,7 +35,7 @@ const Navbar = () => {
           <a
             key={link}
             href={`#${link.toLowerCase()}`}
-            className="hover:text-white transition-colors duration-300 relative group"
+            className="hover:text-white transition-colors duration-300 relative group outline-none focus-visible:ring-2 focus-visible:ring-emerald-glow/50 focus-visible:ring-offset-4 focus-visible:ring-offset-black rounded-sm"
           >
             {link}
             <span className="absolute -bottom-1 left-0 w-0 h-px bg-emerald-glow transition-all duration-300 group-hover:w-full" />
@@ -45,7 +45,7 @@ const Navbar = () => {
 
       {/* Right: CTA */}
       <div>
-        <button className="relative group overflow-hidden px-6 py-2 rounded-full bg-white/5 border border-white/10 text-white text-sm font-semibold transition-all duration-300 hover:border-emerald-glow/50">
+        <button className="relative group overflow-hidden px-6 py-2 rounded-full bg-white/5 border border-white/10 text-white text-sm font-semibold transition-all duration-300 hover:border-emerald-glow/50 outline-none focus-visible:ring-2 focus-visible:ring-emerald-glow focus-visible:ring-offset-2 focus-visible:ring-offset-black">
           <span className="relative z-10">Experience the Icon</span>
           <div className="absolute inset-0 bg-gradient-to-r from-emerald-glow to-turbo opacity-0 group-hover:opacity-20 transition-opacity duration-500" />
         </button>

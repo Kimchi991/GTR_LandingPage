@@ -122,7 +122,7 @@ const ScrollSections = ({ scrollProgress }: { scrollProgress: any }) => {
         <p className="text-white/60 text-lg md:text-2xl leading-relaxed max-w-xl mb-6">
           Advanced torque vectoring delivers power where it belongs—to the asphalt.
         </p>
-        <div className="font-mono text-emerald-glow/40 text-sm tracking-[0.3em] uppercase border-l-2 border-emerald-glow/20 pl-4">
+        <div className="font-mono text-emerald-glow/65 text-sm tracking-[0.3em] uppercase border-l-2 border-emerald-glow/30 pl-4">
           Real-time intelligent AWD logic <br />
           Keeps you grounded in every corner.
         </div>
@@ -130,18 +130,18 @@ const ScrollSections = ({ scrollProgress }: { scrollProgress: any }) => {
 
       {/* 75–100%: FINAL REVEAL */}
       <Section scrollProgress={scrollProgress} range={[0.75, 1.0]} align="center">
-        <h2 className="text-4xl md:text-7xl font-bold text-white mb-6 text-center leading-tight">
+        <h2 className="text-4xl md:text-7xl font-bold text-white/65 mb-6 text-center leading-tight">
           Legacy Restored. <br />
-          <span className="text-emerald-glow">Performance Refined.</span>
+          <span className="text-emerald-glow/65">Performance Refined.</span>
         </h2>
-        <p className="text-white/60 text-lg md:text-xl text-center max-w-2xl mx-auto mb-8">
+        <p className="text-white/65 text-lg md:text-xl text-center max-w-2xl mx-auto mb-8">
           The R34 Emerald Edition: Designed for the track, built for the soul.
         </p>
         <div className="flex gap-6 justify-center">
-          <button className="px-8 py-4 bg-emerald-glow text-black font-bold uppercase tracking-widest text-sm hover:bg-white transition-colors duration-300">
+          <button className="px-8 py-4 bg-emerald-glow text-black font-bold uppercase tracking-widest text-sm hover:bg-white transition-colors duration-300 outline-none focus-visible:ring-2 focus-visible:ring-emerald-glow focus-visible:ring-offset-4 focus-visible:ring-offset-black">
             Configure Your Build
           </button>
-          <button className="px-8 py-4 border border-white/20 text-white font-bold uppercase tracking-widest text-sm hover:bg-white/10 transition-colors duration-300">
+          <button className="px-8 py-4 border border-white/20 text-white font-bold uppercase tracking-widest text-sm hover:bg-white/10 transition-colors duration-300 outline-none focus-visible:ring-2 focus-visible:ring-white/50 focus-visible:ring-offset-4 focus-visible:ring-offset-black">
             Technical Specifications
           </button>
         </div>

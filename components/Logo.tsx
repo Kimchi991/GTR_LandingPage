@@ -1,4 +1,4 @@
-import React from "react";
+import Image from "next/image";
 import { motion } from "framer-motion";
 
 export const LogoGTR = ({ className = "h-12" }: { className?: string }) => {
@@ -6,24 +6,23 @@ export const LogoGTR = ({ className = "h-12" }: { className?: string }) => {
     <div className={`relative group flex items-center gap-4 ${className} min-w-fit`}>
       {/* 
          THE HIGH-END BRANDING CONTAINER
-         Simple <img> to bypass Next.js optimization delays for new public assets.
+         Optimized via next/image for better caching across Navigation and Loading screens.
       */}
       <div className="relative w-12 h-12 md:w-16 md:h-16 flex-shrink-0 filter drop-shadow-[0_0_15px_rgba(80,200,120,0.6)] transition-all duration-500 group-hover:scale-110">
         
         {/* The Graphic Logo (High-End Concept 4) */}
-        <img
+        <Image
           src="/logo-abstract.png"
-          alt="GT-R R34"
-          className="w-full h-full object-contain relative z-10"
-          onError={(e) => {
-            // If the image fails, hidden fallback styling triggers
-            e.currentTarget.style.display = 'none';
-          }}
+          alt="Nissan Skyline GT-R R34 Logo"
+          fill
+          sizes="(max-width: 768px) 48px, 64px"
+          className="object-contain relative z-10"
+          priority
         />
 
         {/* 
             ULTRA-MINIMALIST GLOW FALLBACK
-            Only visible if the image above is missing or fails.
+            Only visible if the image above fails to load (layout placeholder).
         */}
         <div className="absolute inset-0 flex items-center justify-center opacity-20 pointer-events-none">
            <div className="w-8 h-8 border-t-2 border-emerald-glow rounded-full animate-spin-slow" />

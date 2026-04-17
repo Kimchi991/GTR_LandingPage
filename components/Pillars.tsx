@@ -87,9 +87,10 @@ const HeartPillar = () => {
         >
           <Image 
             src="/pillars/1stP.png" 
-            alt="The Heart - Engine" 
+            alt="The Heart - RB26DETT Engine Block" 
             fill 
             className="object-contain"
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 800px"
             priority
           />
           {isGlitched && <DataLeak />}
@@ -134,7 +135,7 @@ const HeartPillar = () => {
 
       <div className="absolute top-12 left-12">
         <span className="text-emerald-glow/40 text-sm tracking-widest uppercase font-mono">Pillar 01 / RB26DETT</span>
-        <h3 className="text-white text-4xl font-bold">THE HEART</h3>
+        <h2 className="text-white text-4xl font-bold uppercase tracking-tight">THE HEART</h2>
       </div>
     </section>
   );
@@ -155,9 +156,10 @@ const BrainPillar = () => {
       <div className="relative w-full h-full max-w-6xl max-h-[80vh]">
         <Image 
           src="/pillars/2ndP.png" 
-          alt="The Brain - Drivetrain" 
+          alt="The Brain - ATTESA E-TS AWD Drivetrain" 
           fill 
           className="object-contain"
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 800px"
           priority
         />
         
@@ -204,7 +206,7 @@ const BrainPillar = () => {
 
       <div className="absolute top-12 right-12 text-right">
         <span className="text-turbo/40 text-sm tracking-widest uppercase font-mono">Pillar 02 / ATTESA E-TS</span>
-        <h3 className="text-white text-4xl font-bold">THE BRAIN</h3>
+        <h2 className="text-white text-4xl font-bold uppercase tracking-tight">THE BRAIN</h2>
       </div>
     </section>
   );
@@ -235,9 +237,10 @@ const SoulPillar = () => {
       <div className="relative w-full h-full flex items-center justify-center">
         <Image 
           src="/pillars/3rdP.png" 
-          alt="The Soul - Z-Tune" 
+          alt="The Soul - Nissan Skyline GT-R Z-Tune Silhouette" 
           fill 
           className="object-contain"
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 800px"
           priority
         />
         
@@ -251,7 +254,7 @@ const SoulPillar = () => {
 
         <div className="absolute bottom-12 left-12">
             <span className="text-white/20 text-sm tracking-widest uppercase font-mono">Pillar 03 / Z-TUNE</span>
-            <h3 className="text-white text-4xl font-bold">THE SOUL</h3>
+            <h2 className="text-white text-4xl font-bold uppercase tracking-tight">THE SOUL</h2>
         </div>
       </div>
     </section>
